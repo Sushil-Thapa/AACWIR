@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutdevelopers"
+    tools:context="np.edu.thapathalicampus.acwir.About">
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/tu"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DEVELOPERS:"
+        android:id="@+id/idevelopers"
+        android:layout_below="@id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1. Sushil Thapa"
+        android:id="@+id/iSushil"
+        android:layout_below="@id/idevelopers"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2. Subash Thakuri"
+        android:id="@+id/iSubash"
+        android:layout_below="@+id/iSushil"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="3. Sagar Maharjan"
+        android:id="@+id/iSagar"
+        android:layout_below="@+id/iSubash"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:background="#FFDDDDDD"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Thapathali Campus \n KATHMANDU"
+        android:id="@+id/iCollege"
+        android:gravity="center"
+        android:layout_below="@+id/iSagar"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;&lt;Back"
+        android:id="@+id/ibutton"
+        android:layout_below="@+id/iCollege"
+        android:layout_centerHorizontal="true" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#161a1d">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="np.edu.thapathalicampus.acwir.MainActivity"
+    android:id="@+id/iRelativeAccelerometerAll"
+        android:background="#161a1d"
+        android:clickable="false">
+            <LinearLayout
+android:orientation="horizontal"
+                android:id="@+id/i1LinearLayout"
+                android:background="#161a1d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/server_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1"
+                    android:background="#21272b"
+                    android:shadowColor="#5677fc"
+                    android:textColor="#5677fc"
+                    android:text="@string/server_mode_string" >
+                </Button>
+
+                <!--<Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="7dip"
+                    android:layout_height="50dip"
+                    android:id="@+id/iresetBtn"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reset"/>-->
+
+                <Button
+                    android:textSize="@dimen/activity_vertical_margin"
+                    android:id="@+id/client_button"
+                    android:shadowColor="#5677fc"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="#21272b"
+                    android:textColor="#5677fc"
+                    android:layout_weight="1"
+                    android:text="@string/client_mode_string" >
+                </Button>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/i2LinearLayout"
+            android:background="#161a1d"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/i1LinearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#061a1d"
+            android:text="@string/rtextWindow"
+            android:textColor="#5677fc"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="0.1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginTop="0.1dip"
+            android:lines="2" />
+        <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/accelooof"
+        android:checked="false"
+        android:id="@+id/iToggleBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_window" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iToggleImage"
+            android:background="@drawable/check"
+            android:layout_below="@+id/iToggleBtn"
+            android:layout_marginBottom="0.1dip"
+            android:textOn=""
+            android:textOff=""
+            android:enabled="false"
+            android:focusable="false"
+            android:shadowColor="#5677fc"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rX"
+        android:id="@+id/iXText"
+            android:gravity="center_horizontal"
+            android:textColor="#405f0f"
+            android:layout_below="@+id/iToggleImage"
+        android:layout_centerHorizontal="true"
+            android:background="#061a1d"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rY"
+        android:id="@+id/iYText"
+        android:textColor="#405f0f"
+        android:layout_below="@+id/iXText"
+        android:background="#061a1d"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/rZ"
+        android:background="#061a1d"
+        android:textColor="#405f0f"
+        android:gravity="center_horizontal"
+        android:id="@+id/iZText"
+        android:layout_below="@+id/iYText"
+        android:layout_centerHorizontal="true"/>
+
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/rDirectionText"
+        android:background="#161a1d"
+        android:id="@+id/iDirectionText"
+        android:layout_below="@+id/iZText"
+        android:textColor="#5677fc"
+        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:id="@+id/iAbout"
+            android:background="@drawable/aboutbutton"
+            android:layout_below="@+id/iDirectionText"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:shadowColor="#00000000"
+            android:textColor="#FF0000FF" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
