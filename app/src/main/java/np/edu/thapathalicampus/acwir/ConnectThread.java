@@ -38,7 +38,7 @@ public class ConnectThread extends Thread {
             // successful connection or an exception
             MainActivity.tv.setText("Connecting...");
             mBluetoothSocket.connect(); //prob here of HC-05
-            manageConnectedSocket();//instead of creating new thread
+            manageConnectedSocket();
 
         } catch (IOException connectException) {
             try {
